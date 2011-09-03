@@ -1,0 +1,65 @@
+name: Administration
+description: An Basic Administration Plugin.
+main: net.H4ckHunt3r.Administration.Administration
+version: 0.1
+author: H4ckHunt3r
+website: http://www.h4ckhunt3r.net
+commands:
+  heal:
+    description: Heals you or another Player.
+    usage: /<command> [playername]
+  i:
+    description: Gives you or another player some item
+    usage: /<command> <itemId> [amount] [playername]
+  w:
+    description: Manages the weather
+    usage: /<command> <sun|storm|thunder> [duration]
+  t:
+    description: Simple time management
+    usage: /<command> <day|night>
+  rep:
+    description: repair breakable items in your inventory/hand.
+    usage: /<command> [all]
+  break:
+    description: adds you or another player the ability to break blocks instantly or by normal amount of hits
+    usage: /<command> [player]
+  god:
+    description: makes you un killable
+    usage: /god [playername]
+  more:
+    description: fills the itemstack in your hand
+    usage: /<command>
+  infinite:
+    description: adds you infinite of your materials (auto stack refill)
+    usage: /<command> [playernames] [..]
+    
+  permissions:
+  admin.cmd.heal:
+    description: Allows to Heal player
+    default: op
+  admin.cmd.w:
+    description: Allows to change the weather
+    default: op
+  admin.cmd.t:
+    description: Allows to change the time
+    default: op
+  admin.cmd.i:
+    description: Allows to add items
+    default: op
+  admin.cmd.rep:
+    description: Allows to repair items
+    default: op
+  admin.cmd.break:
+    description: Allows to activate instant block breaking
+    default: op
+  admin.cmd.god:
+    description: Allows god mode
+    default: op
+  admin.cmd.more:
+    description: Allows player to refill stacks
+    default: op
+  admin.cmd.infinite:
+    description: Alows player to use auto refill stacks
+    default: op
+  admin.break.bedrock:
+    description: allows to break bedrock with insta break
